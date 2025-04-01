@@ -7,21 +7,12 @@
             width: 100%;
             height: auto;
         }
-        .new-sign {
-            color: red;
-            font-weight: bold;
-            margin-left: 5px;
-        }
-        .clickable {
-            cursor: pointer;
-            text-decoration: underline;
-        }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="banner">
-            <!--<img src="logo.jpeg" alt="Logo" class="loogo">-->
+            <!--<img src="logo.jpeg" alt="Logo" class="logo">-->
             <h1>ATL Tinkerpreneur 2025</h1>
         </div>
         <div class="login-box">
@@ -37,8 +28,8 @@
             <a href="#" class="forgot" onclick="fakeForgotPassword()">Forgot Password?</a>
         </div>
         <div class="info-box">
-            <div class="note clickable" onclick="importantNote()">Important Note<span class="new-sign">NEW!</span></div>
-            <div class="help clickable" onclick="helpDesk()">Help Desk</div>
+            <div class="note" onclick="importantNote()">Important Note</div>
+            <div class="help" onclick="helpDesk()">Help Desk</div>
         </div>
     </div>
 
@@ -52,7 +43,7 @@
         }
 
         function importantNote() {
-            alert('IMPORTANT: YOU ARE CLINICALLY DUMB,  APRIL FOOLS! 🤡');
+            alert('IMPORTANT: YOU ARE CLINICALLY DUMB, APRIL FOOLS! 🤡');
         }
 
         function helpDesk() {
@@ -61,3 +52,4 @@
     </script>
 </body>
 </html>
+
