@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+        .logo {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="banner">
+            <img src="logo.png" alt="Logo" class="logo">
+            <h1>ATL Tinkerpreneur 2024</h1>
+        </div>
+        <div class="login-box">
+            <h2>ATL Tinkerfest 2024 - Tinkerpreneur</h2>
+            <p>Tinker to become an entrepreneur this summer</p>
+            <input type="text" class="input-field" placeholder="Enter Email">
+            <input type="password" class="input-field" placeholder="Enter Password">
+            <div class="captcha-container">
+                <input type="text" class="captcha" placeholder="Enter captcha code">
+                <div class="fake-captcha">7gH3K9a</div>
+            </div>
+            <button onclick="fakeLogin()">LOGIN</button>
+            <a href="#" class="forgot">Forgot Password?</a>
+        </div>
+        <div class="info-box">
+            <div class="note">Important Note</div>
+            <div class="help">Help Desk</div>
+        </div>
+    </div>
+
+    <script>
+        function fakeLogin() {
+            window.location.href = "prank.html";
+        }
+    </script>
+</body>
+</html>
+ 
