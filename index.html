@@ -7,6 +7,15 @@
             width: 100%;
             height: auto;
         }
+        .new-sign {
+            color: red;
+            font-weight: bold;
+            margin-left: 5px;
+        }
+        .clickable {
+            cursor: pointer;
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
@@ -25,11 +34,11 @@
                 <div class="fake-captcha">7gH3K9a</div>
             </div>
             <button onclick="fakeLogin()">LOGIN</button>
-            <a href="#" class="forgot">Forgot Password?</a>
+            <a href="#" class="forgot" onclick="fakeForgotPassword()">Forgot Password?</a>
         </div>
         <div class="info-box">
-            <div class="note">Important Note</div>
-            <div class="help">Help Desk</div>
+            <div class="note clickable" onclick="importantNote()">Important Note<span class="new-sign">NEW!</span></div>
+            <div class="help clickable" onclick="helpDesk()">Help Desk</div>
         </div>
     </div>
 
@@ -37,7 +46,18 @@
         function fakeLogin() {
             window.location.href = "prank.html";
         }
+
+        function fakeForgotPassword() {
+            alert('⚠️ Important Notice: Your progress is being erased, and your entry has been revoked. Please contact the administrator for assistance.');
+        }
+
+        function importantNote() {
+            alert('IMPORTANT: YOU ARE CLINICALLY DUMB, APRIL FOOLS! 🤡');
+        }
+
+        function helpDesk() {
+            alert('🤦‍♂️ You\'re too stupid, even the government can\'t help you.');
+        }
     </script>
 </body>
 </html>
- 
